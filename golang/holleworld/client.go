@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 	"os"
-	"fmt"
 	"time"
 
 	pb "grpc-php-to-golang-demo/protobuf/go-server/helloworld"
@@ -31,8 +30,6 @@ func main() {
 	if len(os.Args) > 1 {
 		name = os.Args[1]
 	}
-
-	fmt.Println("1")
 
 	go func() {
 		r, err := c.SayHello(context.Background(), &pb.HelloRequest{Name: name})

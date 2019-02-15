@@ -12,3 +12,7 @@
 *.out
 golang/holleworld/greeter_client
 golang/holleworld/greeter_server
+golang/holleworld/client
+golang/holleworld/server
+protobuf2/helloworld.proto
+protobuf2/go-server/helloworld/helloworld.pb.go
