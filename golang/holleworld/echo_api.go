@@ -1,14 +1,15 @@
 package main
 
 import (
-	"github.com/labstack/echo"
-	//	"github.com/labstack/echo/middleware"
-	"sort"
 	"os"
-	"github.com/urfave/cli"
-	"github.com/sunmi-OS/gocore/api"
+	"sort"
+
 	"net/http"
 	"io/ioutil"
+
+	"github.com/urfave/cli"
+	"github.com/labstack/echo"
+	"github.com/sunmi-OS/gocore/api"
 )
 
 type EchoApi struct {

@@ -1,15 +1,17 @@
 package main
 
 import (
-	"github.com/labstack/echo"
 	"sort"
 	"os"
-	"github.com/urfave/cli"
-	"github.com/sunmi-OS/gocore/api"
-	"google.golang.org/grpc"
-	pb "grpc-php-golang/protobuf/go-server/helloworld"
 	"log"
+
+	pb "grpc-php-to-golang-demo/protobuf/go-server/helloworld"
+
+	"github.com/urfave/cli"
+	"google.golang.org/grpc"
+	"github.com/labstack/echo"
 	"golang.org/x/net/context"
+	"github.com/sunmi-OS/gocore/api"
 )
 
 type EchoApi struct {
@@ -67,9 +69,6 @@ func (a *EchoApi) echoStart(c *cli.Context) error {
 func main() {
 
 	app := cli.NewApp()
-
-	// 初始化配置
-	//	viper.NewConfig("config", "conf")
 
 	// 指定对于的命令
 	app.Commands = []cli.Command{

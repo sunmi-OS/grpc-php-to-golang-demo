@@ -3,13 +3,13 @@ package main
 import (
 	"log"
 	"os"
-
-	pb "grpc-php-golang/protobuf/go-server/helloworld"
-
-	"golang.org/x/net/context"
-	"google.golang.org/grpc"
 	"fmt"
 	"time"
+
+	pb "grpc-php-to-golang-demo/protobuf/go-server/helloworld"
+
+	"google.golang.org/grpc"
+	"golang.org/x/net/context"
 )
 
 const (

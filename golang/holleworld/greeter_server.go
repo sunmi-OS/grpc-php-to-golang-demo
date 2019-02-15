@@ -4,10 +4,10 @@ import (
 	"log"
 	"net"
 
-	pb "grpc-php-golang/protobuf/go-server/helloworld"
+	pb "grpc-php-to-golang-demo/protobuf/go-server/helloworld"
 
-	"golang.org/x/net/context"
 	"google.golang.org/grpc"
+	"golang.org/x/net/context"
 	"google.golang.org/grpc/reflection"
 )
 
@@ -20,7 +20,7 @@ type server struct{}
 
 // SayHello implements helloworld.GreeterServer
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
-	return &pb.HelloReply{Message: "Hello22222 " + in.Name}, nil
+	return &pb.HelloReply{Message: "Hello " + in.Name}, nil
 }
 
 func main() {
