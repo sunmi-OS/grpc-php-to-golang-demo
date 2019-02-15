@@ -1,0 +1,45 @@
+[
+    {
+        "name": "grpc/grpc",
+        "version": "1.15.0",
+        "version_normalized": "1.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grpc/grpc-php.git",
+            "reference": "1a7cd0dc95a68594b8a8cfbf75ff236383172e2f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grpc/grpc-php/zipball/1a7cd0dc95a68594b8a8cfbf75ff236383172e2f",
+            "reference": "1a7cd0dc95a68594b8a8cfbf75ff236383172e2f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "google/auth": "^v1.3.0"
+        },
+        "suggest": {
+            "ext-protobuf": "For better performance, install the protobuf C extension.",
+            "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
+        },
+        "time": "2018-09-12T21:49:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Grpc\\": "src/lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "description": "gRPC library for PHP",
+        "homepage": "https://grpc.io",
+        "keywords": [
+            "rpc"
+        ]
+    }
+]

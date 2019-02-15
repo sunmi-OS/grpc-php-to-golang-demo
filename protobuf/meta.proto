@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package meta;
+
+service Agent {
+  rpc GetInfo (MetaRequest) returns (MetaResponse);
+}
+
+message MetaRequest {
+  string appId = 1;
+}
+
+message MetaResponse {
+  string appId = 1;
+  string title = 2;
+  string name = 3;
+  string logo = 4;
+}
